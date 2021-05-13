@@ -37,20 +37,24 @@ function expect(target) {
 //
 // ONLY ADD CODE TO THIS SECTION
 
-function Human() {
-
-};
-
-function Dog() {
-
-};
-
-Human.prototype.pet = function() {
-
+function Human({cool = false, name} = {}) {
+  this.cool = cool;
+  this.name = name;
 }
 
-Human.prototype.feed = function() {
+function Dog({color, hungry = true, status = 'normal',owner} = {}) {
+   this.color = color;
+   this.hunrgy = hungry;
+   this.status = status;
+   this.owner = owner;
+}
 
+Human.prototype.pet = function(dog) {
+  dog.status = 'happy';
+}
+
+Human.prototype.feed = function(dog) {
+  dog.hungry = false;
 }
 
 
