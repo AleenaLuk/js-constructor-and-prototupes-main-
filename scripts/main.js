@@ -37,6 +37,23 @@ function expect(target) {
 //
 // ONLY ADD CODE TO THIS SECTION
 
+function Human() {
+
+};
+
+function Dog() {
+
+};
+
+Human.prototype.pet = function() {
+
+}
+
+Human.prototype.feed = function() {
+
+}
+
+
 
 
 //     __
