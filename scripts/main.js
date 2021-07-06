@@ -44,7 +44,7 @@ function Human({cool = false, name} = {}) {
 
 function Dog({color, hungry = true, status = 'normal',owner} = {}) {
    this.color = color;
-   this.hunrgy = hungry;
+   this.hungry = hungry;
    this.status = status;
    this.owner = owner;
 }
@@ -56,6 +56,7 @@ Human.prototype.pet = function(dog) {
 Human.prototype.feed = function(dog) {
   dog.hungry = false;
 }
+
 
 
 
